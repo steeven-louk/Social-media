@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     padding: .5em 5%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     &__left{
         display: flex;
