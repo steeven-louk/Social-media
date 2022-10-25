@@ -119,5 +119,16 @@
         }
       }
     }
+
+   .loadMore{
+    display: block;
+    margin: auto;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1px solid #9a9a9a;
+    background: transparent;
+    border-radius: 4px;
+
+   }
   }
 }

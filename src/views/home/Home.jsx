@@ -1,4 +1,5 @@
 import React from 'react'
+import PostCard from '../../components/Post/PostCard';
 import SidebarLeft from '../../components/sidebarLeft/SidebarLeft'
 import { SidebarRight } from '../../components/sidebarRight/SidebarRight'
 
@@ -59,6 +60,11 @@ const Home = () => {
                   </div>
                 </div>
 
+                <div className="post__container">
+                  <PostCard/>
+                </div>
+
+                <button className='loadMore'>Load More</button>
             </div>
             <SidebarRight />
         </div>
