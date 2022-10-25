@@ -40,6 +40,25 @@ const Home = () => {
                   </div>
                 </div>
 
+                <div className="write-post-container">
+                  <div className="user-profile">
+                    <img src="./images/profile-pic.png" alt="" />
+                    <div className="user-name">
+                      <p>John Nicholson</p>
+                      <small>Public <i className="fas fa-caret-down"></i> </small>
+                    </div>
+                  </div>
+
+                  <div className="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div className="add-post-links">
+                      <a href="/"><img src="./images/live-video.png" alt="video" /> Live Video</a>
+                      <a href="/"><img src="./images/photo.png" alt="video" /> Photo/Video</a>
+                      <a href="/"><img src="./images/feeling.png" alt="video" /> Feeling/Activity</a>
+                    </div>
+                  </div>
+                </div>
+
             </div>
             <SidebarRight />
         </div>

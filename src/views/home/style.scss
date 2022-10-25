@@ -60,5 +60,64 @@
         border: 3px solid #efefef
       }
     }
+
+    .write-post-container{
+      width: 100%;
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      color: #626262;
+
+      .user-profile{
+        display: flex;
+        align-items: center;
+
+        img{
+          width: 45px;
+          border-radius: 50%;
+          margin-top: 10px;
+        }
+
+        .user-name{
+          margin: .5em .5em;
+          font-weight: 500;
+          color: #626262;
+         
+          p{
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      .post-input-container{
+        padding: 20px 0 0 55px;
+
+        textarea{
+          width: 100%;
+          resize: none;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          background: transparent
+        }
+
+        .add-post-links{
+          display: flex;
+          margin-top: 10px;
+
+          a{
+            display: flex;
+            align-items: center;
+            color: #626262;
+            margin-right: 30px;
+            font-size: 13px;
+
+            img{
+              width: 20px;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
   }
 }
