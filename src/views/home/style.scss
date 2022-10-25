@@ -5,5 +5,60 @@
 
   .container{
     flex-basis: 47px;
+
+    .story-gallery{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: .5em;
+
+
+      .story{
+        flex-basis: 18%;
+       // padding-top: 32%;
+        position: relative;
+        overflow: hidden;
+
+        .upload{
+          width: 2.2em;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 3em;
+          left: 1.6em;
+          cursor: pointer;
+          transition: .4s all ease-in-out;
+
+          &:hover{
+            box-shadow: 1px 1px 5px #000;
+            border-radius: 50%;
+          }
+        }
+
+        p{
+          position: relative;
+          top: -1.5em;
+          text-align: center;
+          font-weight: bold;
+          color: #fff;
+          box-shadow: 0 -2px 20px #000;
+
+        }
+        
+        .profil{
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          width: 5.5em;
+          background: linear-gradient(transparent, rgba(0,0,0,0.5));
+        }
+      }
+
+      .story.profil .upload{
+        top: unset;
+        left: 5%;
+        bottom: 8.5em;
+        border: 3px solid #efefef
+      }
+    }
   }
 }
