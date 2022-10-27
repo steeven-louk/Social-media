@@ -4,9 +4,7 @@ import PostCard from "../../components/Post/PostCard";
 import "./style.scss";
 
 const Profile = () => {
-
   return (
-    
     <div className="profile">
       <img
         src="./images/cover.png"

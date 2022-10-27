@@ -1,6 +1,10 @@
 .profile {
     padding: 2em 15%;
 
+    @media only screen and(max-width:900px) {
+        padding: 2em 5%;
+    }
+
     &__cover-img {
         width: 100%;
     }
@@ -12,6 +16,10 @@
         background: #fff;
         padding: 2em;
         border-radius: 4px;
+
+        @media only screen and(max-width:900px) {
+            flex-wrap: wrap;
+        }
 
         &-left {
 
@@ -29,6 +37,10 @@
                     h3 {
                         font-size: 2.2em;
                         font-weight: 600;
+
+                        @media only screen and(max-width:900px) {
+                            font-size: 16px;
+                        }
                     }
 
                     p {
@@ -39,7 +51,7 @@
                         width: 30px;
                         border-radius: 50%;
                         margin-top: 12px;
-                        margin-right: 0.5em;
+                        margin-right: 0em;
                     }
                 }
             }
@@ -50,6 +62,11 @@
         &-right {
 
             text-align: right;
+
+            @media only screen and(max-width:900px) {
+                text-align: left;
+                margin-top: 15px;
+            }
 
             button {
                 background: #1876f2;
@@ -62,6 +79,10 @@
                 border-radius: 3px;
                 margin-left: 1rem;
                 cursor: pointer;
+
+                @media only screen and(max-width:900px) {
+                    margin: 0 10px 0 0;
+                }
 
                 img {
                     height: 1.5em;
@@ -95,8 +116,16 @@
         justify-content: space-between;
         margin-top: 2rem;
 
+        @media only screen and(max-width:900px) {
+            flex-wrap: wrap;
+        }
+
         .info-col {
             flex-basis: 33%;
+
+            @media only screen and(max-width:900px) {
+                flex-basis: 100%;
+            }
 
             .profile-intro {
                 background: var(--bg-body-color);
@@ -171,6 +200,11 @@
         .post-col {
             flex-basis: 65%;
 
+            @media only screen and(max-width:900px) {
+                width: 100%;
+                flex-basis: 100%;
+            }
+
             .write-post-container {
                 width: 100%;
                 background: var(--bg-body-color);
@@ -201,6 +235,10 @@
 
                 .post-input-container {
                     padding: 20px 0 0 55px;
+
+                    @media only screen and(max-width:900px) {
+                        padding: 20px 0 0 0;
+                    }
 
                     textarea {
                         width: 100%;
