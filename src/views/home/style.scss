@@ -15,7 +15,6 @@
 
       .story{
         flex-basis: 18%;
-       // padding-top: 32%;
         position: relative;
         overflow: hidden;
 
@@ -63,7 +62,7 @@
 
     .write-post-container{
       width: 100%;
-      background: #fff;
+      background: var(--bg-body-color);
       border-radius: 6px;
       padding: 20px;
       color: #626262;
@@ -128,6 +127,7 @@
     border: 1px solid #9a9a9a;
     background: transparent;
     border-radius: 4px;
+    color: var(--toggle-color);
 
    }
   }

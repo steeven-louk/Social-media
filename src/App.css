@@ -2,6 +2,16 @@
   --nav-color: #1876f2;
   --bg-color: #efefef;
   --link-color: #626262;
+  --bg-body-color: #fff;
+  --toggle-color: #000;
+}
+
+.dark-theme{
+  --bg-color: #0a0a0a;
+  --nav-color: #000;
+  --bg-body-color: #000;
+  --toggle-color: #fff;
+
 }
 
 *{
@@ -12,8 +22,9 @@
   transition: .4s all ease;
 }
 
-body{
+.App{
   background: var(--bg-color);
+  color: var(--toggle-color)
 }
 
 li{
@@ -22,4 +33,5 @@ li{
 
 a{
   text-decoration: none;
+  color: var(--link-color);
 }
