@@ -10,8 +10,11 @@ const Navbar = (props) => {
   return (
        <>
          <nav className='navbar'>
+            <a href="/">
+            <img src="./images/logo.png"  className="navbar__left__logo" alt="logo" />
+            </a>
+
             <div className="navbar__left">
-                <img src="./images/logo.png"  className="navbar__left__logo" alt="logo" />
                 <ul>
                     <li><img src="./images/notification.png" alt="" /></li>
                     <li><img src="./images/inbox.png" alt="" /></li>

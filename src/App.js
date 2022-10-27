@@ -23,8 +23,8 @@ function App() {
   return (
     <div className={!getLocalStorage ? "App" : "App dark-theme"}>
       <Navbar theme={getLocalStorage} setTheme={setTheme} />
-      {/* <Home/> */}
-      <Profile/>
+      <Home/>
+      {/* <Profile/> */}
       <Footer/>
     </div>
   );

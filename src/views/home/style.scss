@@ -6,6 +6,10 @@
   .container{
     flex-basis: 47px;
 
+    @media only screen and(max-width:900px) {
+      flex-basis: 100%;
+  }
+
     .story-gallery{
       display: flex;
       justify-content: space-between;
@@ -17,6 +21,13 @@
         flex-basis: 18%;
         position: relative;
         overflow: hidden;
+
+        img{
+          @media only screen and(max-width:900px) {
+            width: 20px;
+            border-width: 3px;
+        }
+        }
 
         .upload{
           width: 2.2em;
@@ -41,6 +52,9 @@
           color: #fff;
           box-shadow: 0 -2px 20px #000;
 
+          @media only screen and(max-width:900px) {
+            font-size: 10px;
+        }
         }
         
         .profil{
@@ -49,6 +63,7 @@
           border-radius: 10px;
           width: 5.5em;
           background: linear-gradient(transparent, rgba(0,0,0,0.5));
+          width: 100%;
         }
       }
 
@@ -56,7 +71,7 @@
         top: unset;
         left: 5%;
         bottom: 8.5em;
-        border: 3px solid #efefef
+        border: 3px solid #efefef;
       }
     }
 
@@ -89,19 +104,28 @@
       }
 
       .post-input-container{
+
         padding: 20px 0 0 55px;
+
+        @media only screen and(max-width:900px) {
+          padding-left: 0;
+       }
 
         textarea{
           width: 100%;
           resize: none;
           border: none;
           border-bottom: 1px solid #ccc;
-          background: transparent
+          background: transparent;
         }
 
         .add-post-links{
           display: flex;
           margin-top: 10px;
+
+          @media only screen and(max-width:900px) {
+           flex-wrap: wrap;
+        }
 
           a{
             display: flex;
@@ -110,9 +134,19 @@
             margin-right: 30px;
             font-size: 13px;
 
+            @media only screen and(max-width:900px) {
+              margin-right: 12px;
+              font-size: 9px;
+           }
+
             img{
               width: 20px;
               margin-right: 6px;
+
+              @media only screen and(max-width:900px) {
+                width: 16px;
+                margin-right: 5px;
+            }
             }
           }
         }
