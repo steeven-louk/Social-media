@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './views/home/Home';
+import Profile from './views/profile/Profile';
 
 function Footer(){
   return(
@@ -22,7 +23,8 @@ function App() {
   return (
     <div className={!getLocalStorage ? "App" : "App dark-theme"}>
       <Navbar theme={getLocalStorage} setTheme={setTheme} />
-      <Home/>
+      {/* <Home/> */}
+      <Profile/>
       <Footer/>
     </div>
   );

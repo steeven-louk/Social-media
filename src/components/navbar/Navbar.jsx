@@ -4,7 +4,7 @@ import './style.scss';
 
 const Navbar = (props) => {
 
-    const [isToggle, setIsToggle] = useState(false);
+    const [isToggle, setIsToggle] = useState(true);
     const {theme, setTheme} = props
 
   return (
