@@ -26,6 +26,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
+        
         <div className="profile__details-right">
           <button type="button">
             <img src="./images/add-friends.png" alt="friend" /> Friend

@@ -1,7 +1,7 @@
 .profile {
     padding: 2em 15%;
 
-    @media only screen and(max-width:900px) {
+    @media only screen and (max-width:900px) {
         padding: 2em 5%;
     }
 
@@ -13,11 +13,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        background: #fff;
+        background: var(--bg-body-color);
         padding: 2em;
         border-radius: 4px;
 
-        @media only screen and(max-width:900px) {
+        @media only screen and (max-width:900px) {
             flex-wrap: wrap;
         }
 
@@ -37,14 +37,16 @@
                     h3 {
                         font-size: 2.2em;
                         font-weight: 600;
-
-                        @media only screen and(max-width:900px) {
+                        color: var(--toggle-color);
+                        
+                        @media only screen and (max-width:900px) {
                             font-size: 16px;
                         }
                     }
 
                     p {
                         font-size: 13px;
+                        color: var(--toggle-color);
                     }
 
                     img {
@@ -63,7 +65,7 @@
 
             text-align: right;
 
-            @media only screen and(max-width:900px) {
+            @media only screen and (max-width:900px) {
                 text-align: left;
                 margin-top: 15px;
             }
@@ -80,7 +82,7 @@
                 margin-left: 1rem;
                 cursor: pointer;
 
-                @media only screen and(max-width:900px) {
+                @media only screen and (max-width:900px) {
                     margin: 0 10px 0 0;
                 }
 
@@ -116,14 +118,14 @@
         justify-content: space-between;
         margin-top: 2rem;
 
-        @media only screen and(max-width:900px) {
+        @media only screen and (max-width:900px) {
             flex-wrap: wrap;
         }
 
         .info-col {
             flex-basis: 33%;
 
-            @media only screen and(max-width:900px) {
+            @media only screen and (max-width:900px) {
                 flex-basis: 100%;
             }
 
@@ -200,7 +202,7 @@
         .post-col {
             flex-basis: 65%;
 
-            @media only screen and(max-width:900px) {
+            @media only screen and (max-width:900px) {
                 width: 100%;
                 flex-basis: 100%;
             }
@@ -236,7 +238,7 @@
                 .post-input-container {
                     padding: 20px 0 0 55px;
 
-                    @media only screen and(max-width:900px) {
+                    @media only screen and (max-width:900px) {
                         padding: 20px 0 0 0;
                     }
 

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
+
 import './style.scss';
 
 
@@ -11,7 +13,7 @@ const Navbar = (props) => {
        <>
          <nav className='navbar'>
             <a href="/">
-            <img src="./images/logo.png"  className="navbar__left__logo" alt="logo" />
+              <img src="./images/logo.png"  className="navbar__left__logo" alt="logo" />
             </a>
 
             <div className="navbar__left">
@@ -37,7 +39,9 @@ const Navbar = (props) => {
                     <img src="./images/profile-pic.png" alt="" />
                     <div className="user-name">
                       <p>John Nicholson</p>
-                       <a href="/">See Your Profile</a>
+                        <Link to="/profile">
+                          <span>See Your Profile</span>
+                        </Link>
                     </div>
                     <div className="toggleTheme"  onClick={()=> setTheme(!theme)}>
                      <i className="fa fa-sun icoToggle icoLight"></i>

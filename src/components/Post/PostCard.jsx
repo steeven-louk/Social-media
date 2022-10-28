@@ -2,12 +2,16 @@ import React from 'react'
 
 import './style.scss';
 
+import {Link} from 'react-router-dom'
+
 const PostCard = () => {
   return (
     <>
         <div className="card">
       <div className="card__user-profile">
-        <img src="./images/profile-pic.png" alt="" />
+        <Link to="/profile">
+            <img src="./images/profile-pic.png" alt="" />
+        </Link>
         <div className="card__user-name">
           <p>John Nicholson</p>
           <span>June 24 2021, 13:40 pm</span>

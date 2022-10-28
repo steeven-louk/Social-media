@@ -3,6 +3,7 @@ import PostCard from '../../components/Post/PostCard';
 import SidebarLeft from '../../components/sidebarLeft/SidebarLeft'
 import { SidebarRight } from '../../components/sidebarRight/SidebarRight'
 
+import {Link} from 'react-router-dom'
 import './style.scss';
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
                   <div className="story profil">
                     <img src="./images/member-1.png" alt="member-1" className='upload' />
                     <img src="./images/status-2.png" alt="" className='profil' />
+                    
                     <p>Post Story</p>
                   </div>
                   <div className="story profil">
@@ -43,7 +45,9 @@ const Home = () => {
 
                 <div className="write-post-container">
                   <div className="user-profile">
-                    <img src="./images/profile-pic.png" alt="" />
+                    <Link to="/profile">
+                      <img src="./images/profile-pic.png" alt="" />
+                    </Link>
                     <div className="user-name">
                       <p>John Nicholson</p>
                       <small>Public <i className="fas fa-caret-down"></i> </small>
